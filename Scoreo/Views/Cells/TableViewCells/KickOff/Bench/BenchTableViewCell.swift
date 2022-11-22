@@ -33,8 +33,8 @@ class BenchTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 10)
-        smallBackView.roundCorners(corners: [.topLeft,.bottomRight], radius: 6)
+      //  backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 10)
+      //  smallBackView.roundCorners(corners: [.topLeft,.bottomRight], radius: 6)
     }
     
     

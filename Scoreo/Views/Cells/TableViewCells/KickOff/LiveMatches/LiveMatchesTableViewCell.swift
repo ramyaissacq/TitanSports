@@ -72,9 +72,9 @@ extension LiveMatchesTableViewCell:UICollectionViewDelegate,UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width * 0.7
+        let width = UIScreen.main.bounds.width
         
-        return CGSize(width: width, height: 130)
+        return CGSize(width: width, height: 221)
     }
     
     

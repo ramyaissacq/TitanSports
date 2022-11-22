@@ -37,13 +37,11 @@ class LiveMatchView:UIView{
        }
     
     override func layoutSubviews() {
-        backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 15)
+        //backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 15)
     }
     
     func configureCell(obj:MatchList?){
         lblName.text = obj?.leagueNameShort
-        let gradient1 = lblName.getGradientLayer(bounds: lblName.bounds)
-        lblName.textColor = lblName.gradientColor(bounds: lblName.bounds, gradientLayer: gradient1)
         lblHomeName.text = obj?.homeName
         lblAwayName.text = obj?.awayName
         let mins = ScoresTableViewCell.timeInMins(startDate: obj?.startTime ?? "")

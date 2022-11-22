@@ -50,10 +50,9 @@ extension KickOffViewController:UISearchBarDelegate{
         
     }
     
+    
     func doSearch(searchText:String){
-       
             var originals = viewModel.OriginalLiveMatches
-            
         self.viewModel.liveMatches = originals?.filter{($0.leagueName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.leagueNameShort?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.homeName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.awayName?.lowercased().contains(searchText.lowercased()) ?? false)}
         originals = viewModel.OriginalSoonMatches
         self.viewModel.soonMatches = originals?.filter{($0.leagueName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.leagueNameShort?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.homeName?.lowercased().contains(searchText.lowercased()) ?? false) || ($0.awayName?.lowercased().contains(searchText.lowercased()) ?? false)}

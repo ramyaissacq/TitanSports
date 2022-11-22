@@ -9,7 +9,7 @@ import UIKit
 
 
 class LinupViewController: BaseViewController {
-    
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var lblBench: UILabel!
     @IBOutlet weak var lblFormation: UILabel!
     @IBOutlet weak var fixedFormation: UILabel!
@@ -47,6 +47,18 @@ class LinupViewController: BaseViewController {
         initialSetup()
 
        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setNavBarColor(color: Colors.screenColor())
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        setNavBarColor()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        backView.roundCorners(corners: [.bottomLeft,.bottomRight], radius: 20)
     }
     
     func initialSetup(){

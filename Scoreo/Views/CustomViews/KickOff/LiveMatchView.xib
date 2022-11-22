@@ -42,16 +42,30 @@
                     <rect key="frame" x="0.0" y="0.0" width="384" height="145"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Ligue 007" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYj-kl-k9C">
-                            <rect key="frame" x="153.5" y="10" width="77.5" height="18.5"/>
-                            <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="12"/>
+                            <rect key="frame" x="134.5" y="10" width="115.5" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="20"/>
                             <color key="textColor" name="AccentColor"/>
                             <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                    <size key="value" width="0.0" height="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUX-2y-jby" userLabel="LeftView">
-                            <rect key="frame" x="15" y="44.5" width="88.5" height="90.5"/>
+                            <rect key="frame" x="15" y="49.5" width="84" height="85.5"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pd-zM-JhW">
-                                    <rect key="frame" x="32" y="0.0" width="25" height="25"/>
+                                    <rect key="frame" x="29.5" y="0.0" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="Wle-6Q-xpK"/>
                                         <constraint firstAttribute="width" constant="25" id="ywm-4r-CZ5"/>
@@ -63,7 +77,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Madrid FC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-zT-1jN">
-                                    <rect key="frame" x="0.0" y="33" width="88.5" height="18.5"/>
+                                    <rect key="frame" x="0.0" y="33" width="84" height="14"/>
                                     <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
                                     <color key="textColor" name="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -79,10 +93,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTW-MY-pp8" userLabel="RightView">
-                            <rect key="frame" x="258.5" y="44.5" width="110.5" height="51.5"/>
+                            <rect key="frame" x="266.5" y="49.5" width="102.5" height="47"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E4K-Xw-7hw">
-                                    <rect key="frame" x="43" y="0.0" width="25" height="25"/>
+                                    <rect key="frame" x="39" y="0.0" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="CYP-ts-IVI"/>
                                         <constraint firstAttribute="height" constant="25" id="Jer-Ik-6fZ"/>
@@ -94,7 +108,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manchester United" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JL-U3-PEU">
-                                    <rect key="frame" x="0.0" y="33" width="110.5" height="18.5"/>
+                                    <rect key="frame" x="0.0" y="33" width="102.5" height="14"/>
                                     <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="12"/>
                                     <color key="textColor" name="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -111,24 +125,24 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1O5-3F-BzA" userLabel="CentreView">
-                            <rect key="frame" x="171" y="44.5" width="42" height="44.5"/>
+                            <rect key="frame" x="171" y="49.5" width="42" height="43"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qsy-5h-nXt">
-                                    <rect key="frame" x="12" y="0.0" width="18.5" height="21.5"/>
+                                    <rect key="frame" x="9" y="0.0" width="24" height="20"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72'" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lw-yz-JcV">
-                                            <rect key="frame" x="0.0" y="0.0" width="18.5" height="21.5"/>
-                                            <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="14"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="20"/>
+                                            <fontDescription key="fontDescription" name="Prompt-SemiBold" family="Prompt" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yc-W7-sKc">
-                                    <rect key="frame" x="0.0" y="26.5" width="42" height="18"/>
+                                    <rect key="frame" x="0.0" y="25" width="42" height="18"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIVE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jF-05-4oh">
-                                            <rect key="frame" x="10.5" y="1.5" width="21.5" height="15.5"/>
+                                            <rect key="frame" x="11" y="3" width="20.5" height="12"/>
                                             <fontDescription key="fontDescription" name="Prompt-Medium" family="Prompt" pointSize="10"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -159,7 +173,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" name="backColor"/>
+                    <color key="backgroundColor" name="centreColor"/>
                     <constraints>
                         <constraint firstItem="GUX-2y-jby" firstAttribute="leading" secondItem="EhQ-EF-Doh" secondAttribute="leading" constant="15" id="1pZ-tX-Zan"/>
                         <constraint firstItem="iYj-kl-k9C" firstAttribute="top" secondItem="EhQ-EF-Doh" secondAttribute="top" constant="10" id="6Cz-tE-Sba"/>
@@ -175,6 +189,11 @@
                         <constraint firstItem="WTW-MY-pp8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1O5-3F-BzA" secondAttribute="trailing" constant="8" id="sxS-ct-HYV"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iYj-kl-k9C" secondAttribute="trailing" constant="8" id="vVh-Pc-igV"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -191,13 +210,13 @@
     </objects>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.42352941176470588" green="0.71764705882352942" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94117647058823528" green="0.094117647058823528" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="backColor">
-            <color red="0.16862745098039217" green="0.19215686274509805" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="centreColor">
+            <color red="0.42745098039215684" green="0.086274509803921567" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="redNew">
-            <color red="0.84705882352941175" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.8784313725490196" green="0.14117647058823529" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textColor">
             <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

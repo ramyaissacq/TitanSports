@@ -61,5 +61,9 @@ class Colors: NSObject {
         return UIColor(named: "gray1")!
     }
     
+    class func screenColor()-> UIColor
+    {
+        return UIColor(named: "screenBackColor")!
+    }
     
 }

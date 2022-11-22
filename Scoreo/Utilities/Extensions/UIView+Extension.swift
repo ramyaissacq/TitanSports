@@ -552,11 +552,11 @@ public class Gradient: UIView {
 //Gradient Colors
 
 extension UIView{
-    func getGradientLayer(bounds : CGRect) -> CAGradientLayer{
+    func getGradientLayer(bounds : CGRect,color1:CGColor = Colors.gradient1Color().cgColor, color2:CGColor = Colors.gradient2Color().cgColor) -> CAGradientLayer{
     let gradient = CAGradientLayer()
     gradient.frame = bounds
     //order of gradient colors
-        gradient.colors = [Colors.gradient1Color().cgColor,Colors.gradient2Color().cgColor]
+        gradient.colors = [color1,color2]
     // start and end points
     gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
     gradient.endPoint = CGPoint(x: 1.0, y: 0.5)

@@ -9,7 +9,8 @@ import UIKit
 
 class SoonTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var backView1: UIView!
+    @IBOutlet weak var backView2: UIView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblHomeName: UILabel!
     @IBOutlet weak var lblAwayName: UILabel!
@@ -24,7 +25,8 @@ class SoonTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-      backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 11)
+      backView1.roundCorners(corners: [.topRight], radius: 25)
+        backView2.roundCorners(corners: [.bottomRight], radius: 25)
         
     }
 

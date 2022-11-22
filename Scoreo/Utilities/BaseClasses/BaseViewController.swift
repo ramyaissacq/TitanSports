@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
         navigationController?.navigationBar.standardAppearance.largeTitleTextAttributes = [NSAttributedString.Key.paragraphStyle : style]
     }
     
-    func setNavBarColor()
+    func setNavBarColor(color:UIColor = Colors.backgroundColor())
     {
         self.navigationItem.backButtonTitle = ""
         self.navigationController?.removeBottomLine()
@@ -28,7 +28,7 @@ class BaseViewController: UIViewController {
         navBarAppearance.configureWithOpaqueBackground()
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        navBarAppearance.backgroundColor = Colors.backgroundColor()
+        navBarAppearance.backgroundColor = color
         navBarAppearance.shadowColor = .clear
         self.navigationController?.navigationBar.tintColor = Colors.backgroundColor()
         self.navigationController?.navigationBar.standardAppearance = navBarAppearance
@@ -69,6 +69,11 @@ class BaseViewController: UIViewController {
         let gradient = label.getGradientLayer(bounds: label.bounds)
         label.textColor = label.gradientColor(bounds: label.bounds, gradientLayer: gradient)
         return label
+    }
+    
+    func setCustomNavBarColor(color:UIColor){
+        self.navigationController?.navigationBar.backgroundColor = color
+        self.navigationController?.navigationBar.barTintColor = color
     }
     
    static func openSideMenu(vc:UIViewController){

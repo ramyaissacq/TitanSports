@@ -107,7 +107,7 @@ class KickOffViewController: BaseViewController {
     }
     
     func setupLeftView(){
-        let lbl = getGradientHeaderLabel(title:headerLabel)
+        let lbl = getHeaderLabel(title:headerLabel)
         if AppPreferences.getMapObject() != nil{
             let btn = getButton(image: UIImage(named: "next")!)
             let gradient = btn.getGradientLayer(bounds: btn.bounds)
@@ -369,17 +369,17 @@ extension KickOffViewController:UITableViewDelegate,UITableViewDataSource{
         }
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section < 2{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! SectionHeaderTableViewCell
-        cell.lblTitle.text = sectionHeaders[section]
-        return cell
-        }
-        return nil
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        if section < 2{
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as! SectionHeaderTableViewCell
+//        cell.lblTitle.text = sectionHeaders[section]
+//        return cell
+//        }
+//        return nil
+//    }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return CGFloat.leastNormalMagnitude
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
