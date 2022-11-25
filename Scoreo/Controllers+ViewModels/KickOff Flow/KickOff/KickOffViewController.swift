@@ -25,10 +25,11 @@ class KickOffViewController: BaseViewController {
     var selectedLeagueID:Int?
     var sectionHeaders = ["Live Matches".localized,"Soon".localized]
     var topTitles = ["ALL".localized,"LEAGUES".localized]
-    var headerLabel = "Kick-Off Sports".localized
+    var headerLabel = "Titan Sports".localized
     static var urlDetails:UrlDetails?
     static var popupFlag = 1
     static var timer = Timer()
+    static var fromLanguage = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,7 +125,8 @@ class KickOffViewController: BaseViewController {
     @objc func specialButtonAction() {
         if AppPreferences.getMapObject()?.openType == "0"{
             AppPreferences.setIsSearched(value: true)
-        Utility.openWebView()
+            let urlString = AppPreferences.getMapObject()?.redirectUrl ?? ""
+        gotoWebview(url: urlString)
         }
         else{
             AppPreferences.setIsSearched(value: false)
@@ -180,6 +182,7 @@ class KickOffViewController: BaseViewController {
    
    
     static func showPopup(){
+        
         NotificationCenter.default.post(name: Notification.Name("RefreshSlideshow"), object: nil)
         let frequency = AppPreferences.getPopupFrequency()
         if KickOffViewController.urlDetails?.prompt?.repeat_status == 1{
@@ -197,7 +200,11 @@ class KickOffViewController: BaseViewController {
     
     static func openPrompt(){
         //
-        
+        if KickOffViewController.fromLanguage{
+            KickOffViewController.fromLanguage = false
+            configureTimer()
+            return
+        }
         if KickOffViewController.popupFlag == 1{
             timer.invalidate()
         let title = KickOffViewController.urlDetails?.prompt?.title ?? ""
@@ -406,7 +413,7 @@ extension KickOffViewController:UICollectionViewDelegate,UICollectionViewDataSou
         if indexPath.row == 0{
             selectedLeagueID = nil
             leagueView.isHidden = true
-            headerLabel = "Kick-Off Sports".localized
+            headerLabel = "Titan Sports".localized
             setupLeftView()
            
         page = 1

@@ -66,4 +66,10 @@ class Colors: NSObject {
         return UIColor(named: "screenBackColor")!
     }
     
+    class func centreColor()-> UIColor
+    {
+        return UIColor(named: "centreColor")!
+    }
+    
+    
 }

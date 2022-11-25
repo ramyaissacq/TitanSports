@@ -68,6 +68,7 @@ class LanguageViewController: BaseViewController {
         default:
             break
         }
+        KickOffViewController.fromLanguage = true
         MOLHLanguage.setAppleLAnguageTo(lang)
         MOLH.reset()
     }

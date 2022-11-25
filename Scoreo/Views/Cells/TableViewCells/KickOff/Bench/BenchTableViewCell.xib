@@ -23,11 +23,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="376" height="88"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-G7-Qra" customClass="Gradient" customModule="Scoreo" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="73"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKc-G7-Qra">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="54"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="benchBack" translatesAutoresizingMaskIntoConstraints="NO" id="UV7-VZ-N0t">
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="54"/>
+                                <color key="backgroundColor" name="screenBackColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GNk-5o-Mg7">
-                                <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                <rect key="frame" x="8" y="2" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="a6V-pI-pJ3"/>
                                     <constraint firstAttribute="height" constant="50" id="mZK-gb-JUb"/>
@@ -39,7 +48,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kKi-NG-QGd">
-                                <rect key="frame" x="66" y="12" width="50" height="53"/>
+                                <rect key="frame" x="66" y="9" width="50" height="37"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuK-pn-oyV">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="18.5"/>
@@ -48,7 +57,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfc-YT-YoU">
-                                        <rect key="frame" x="0.0" y="18.5" width="50" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="18.5" width="50" height="18.5"/>
                                         <fontDescription key="fontDescription" name="Prompt-Regular" family="Prompt" pointSize="10"/>
                                         <color key="textColor" name="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,7 +65,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-rE-MO1">
-                                <rect key="frame" x="277" y="20" width="89" height="26"/>
+                                <rect key="frame" x="277" y="14" width="89" height="26"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-iW-BpX">
                                         <rect key="frame" x="0.0" y="0.0" width="89" height="26"/>
@@ -134,35 +143,33 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" name="backColor"/>
+                        <color key="backgroundColor" name="screenBackColor"/>
                         <constraints>
+                            <constraint firstItem="UV7-VZ-N0t" firstAttribute="leading" secondItem="uKc-G7-Qra" secondAttribute="leading" id="74j-55-ThQ"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kKi-NG-QGd" secondAttribute="bottom" constant="8" id="L9q-CJ-vZQ"/>
-                            <constraint firstItem="kKi-NG-QGd" firstAttribute="top" secondItem="GNk-5o-Mg7" secondAttribute="top" constant="4" id="RJj-ke-TDL"/>
+                            <constraint firstItem="kKi-NG-QGd" firstAttribute="top" secondItem="GNk-5o-Mg7" secondAttribute="top" constant="7" id="RJj-ke-TDL"/>
                             <constraint firstItem="pWs-rE-MO1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kKi-NG-QGd" secondAttribute="trailing" constant="8" id="S3U-pY-vH5"/>
                             <constraint firstItem="pWs-rE-MO1" firstAttribute="centerY" secondItem="GNk-5o-Mg7" secondAttribute="centerY" id="XPS-PJ-fe6"/>
                             <constraint firstItem="GNk-5o-Mg7" firstAttribute="leading" secondItem="uKc-G7-Qra" secondAttribute="leading" constant="8" id="Xfb-Am-MzI"/>
-                            <constraint firstItem="GNk-5o-Mg7" firstAttribute="top" secondItem="uKc-G7-Qra" secondAttribute="top" constant="8" id="Y23-z2-y8V"/>
+                            <constraint firstItem="GNk-5o-Mg7" firstAttribute="top" secondItem="uKc-G7-Qra" secondAttribute="top" constant="2" id="Y23-z2-y8V"/>
                             <constraint firstItem="kKi-NG-QGd" firstAttribute="leading" secondItem="GNk-5o-Mg7" secondAttribute="trailing" constant="8" id="YLk-Lu-cOE"/>
+                            <constraint firstAttribute="height" constant="54" id="YNO-N6-Nka"/>
                             <constraint firstAttribute="trailing" secondItem="pWs-rE-MO1" secondAttribute="trailing" constant="10" id="l6d-aR-b7F"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GNk-5o-Mg7" secondAttribute="bottom" constant="8" id="vKF-jM-dCV"/>
+                            <constraint firstItem="UV7-VZ-N0t" firstAttribute="top" secondItem="uKc-G7-Qra" secondAttribute="top" id="m8o-Xr-NC6"/>
+                            <constraint firstAttribute="bottom" secondItem="UV7-VZ-N0t" secondAttribute="bottom" id="t6u-vv-Oa9"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GNk-5o-Mg7" secondAttribute="bottom" constant="2" id="vKF-jM-dCV"/>
+                            <constraint firstAttribute="trailing" secondItem="UV7-VZ-N0t" secondAttribute="trailing" id="wxm-hy-9Su"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                <color key="value" name="AccentColor"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                <color key="value" name="screenBackColor"/>
-                            </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="35"/>
+                                <real key="value" value="27"/>
                             </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalMode" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="uKc-G7-Qra" secondAttribute="bottom" constant="15" id="860-qU-qUk"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uKc-G7-Qra" secondAttribute="bottom" constant="15" id="860-qU-qUk"/>
                     <constraint firstItem="uKc-G7-Qra" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8da-n0-FAp"/>
                     <constraint firstItem="uKc-G7-Qra" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ah8-r9-b7W"/>
                     <constraint firstAttribute="trailing" secondItem="uKc-G7-Qra" secondAttribute="trailing" id="U0h-mM-LcW"/>
@@ -185,15 +192,10 @@
     </objects>
     <resources>
         <image name="Soccer Ball" width="48" height="48"/>
+        <image name="benchBack" width="350" height="54"/>
         <image name="frame" width="22" height="22"/>
-        <namedColor name="AccentColor">
-            <color red="0.94117647058823528" green="0.094117647058823528" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="HomeColor">
             <color red="0.24705882352941178" green="0.070588235294117646" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="backColor">
-            <color red="0.15686274509803921" green="0.058823529411764705" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="screenBackColor">
             <color red="0.3411764705882353" green="0.050980392156862744" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -31,7 +31,7 @@ class SideMenuViewController:BaseViewController{
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients(["general.flyup@gmail.com"])
+            mail.setToRecipients(["remakereduce@gmail.com"])
             //mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 
             present(mail, animated: true)
@@ -53,6 +53,7 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SideMenuTableViewCell
         cell.imgIcon.image = UIImage(named: "g\(indexPath.row+1)")
+        cell.imgIcon.setImageColor(color: Colors.accentColor())
         cell.lblTitle.text = menus[indexPath.row]
         return cell
         
@@ -65,16 +66,16 @@ extension SideMenuViewController:UITableViewDelegate,UITableViewDataSource{
             openVC(storyBoard: "SideMenu", identifier: "LanguageViewController")
         case 1:
             
-            Utility.openUrl(url: URL(string: "https://kickoffsports1.wordpress.com/2022/11/12/app-store-privacy-policy/")!)
+            Utility.openUrl(url: URL(string: "https://titansports3.wordpress.com/2022/11/23/privacy-policy/")!)
             //ScorePro
         case 2:
-            Utility.shareAction(text: "Install Kick-off Sports from apple appstore", url: URL(string: "https://apps.apple.com/us/app/kick-off-sports/id6444379384"), image: UIImage(named: "launch"), vc: self.parent!)
+            Utility.shareAction(text: "Install Titan Sports from apple appstore", url: URL(string: ""), image: UIImage(named: "launch"), vc: self.parent!)
             
         case 3:
             sendEmail()
             
         case 4:
-            Utility.rateApp(id: "6444379384")
+            Utility.rateApp(id: "6444676857")
             
             
         default:

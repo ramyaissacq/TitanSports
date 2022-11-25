@@ -41,7 +41,12 @@ class LiveMatchView:UIView{
     }
     
     func configureCell(obj:MatchList?){
+        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
+            lblName.text = ""
+        }
+        else{
         lblName.text = obj?.leagueNameShort
+        }
         lblHomeName.text = obj?.homeName
         lblAwayName.text = obj?.awayName
         let mins = ScoresTableViewCell.timeInMins(startDate: obj?.startTime ?? "")

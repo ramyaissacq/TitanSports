@@ -8,7 +8,8 @@
 import UIKit
 
 class ProfileViewController: BaseViewController {
-    
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var backView2: UIView!
     @IBOutlet weak var lblCountry: UILabel!
     @IBOutlet weak var imgPlayer: UIImageView!
     
@@ -42,6 +43,15 @@ class ProfileViewController: BaseViewController {
         initialSettings()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setNavBarColor(color: Colors.centreColor())
+    }
+    
+    override func viewWillLayoutSubviews() {
+        backView.roundCorners(corners: [.bottomLeft,.bottomRight], radius: 20)
+        backView2.roundCorners(corners: [.bottomRight], radius: 40)
     }
     
     func initialSettings(){

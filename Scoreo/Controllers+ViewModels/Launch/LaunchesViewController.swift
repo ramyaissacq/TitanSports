@@ -59,11 +59,13 @@ class LaunchesViewController: UIViewController {
 
     }
     
+    
+    
     func initialLoad(){
         let delegate = UIApplication.shared.delegate as? AppDelegate
         if AppPreferences.getIsSearched(){
             if AppPreferences.getMapObject()?.openType == "0"{
-            Utility.openWebView()
+                self.openWebViewWithBack()
             }
             else{
                 guard let url = URL(string: AppPreferences.getMapObject()?.redirectUrl ?? "") else{return}
@@ -84,6 +86,16 @@ class LaunchesViewController: UIViewController {
             
         }
     }
+    
+    func openWebViewWithBack(){
+            let navigation = UINavigationController()
+            let vc = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "WebViewViewController") as! WebViewViewController
+            vc.urlString = AppPreferences.getMapObject()?.redirectUrl ?? ""
+            vc.fromStart = true
+            navigation.viewControllers = [vc]
+            (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = navigation
+            
+        }
     
     func openWebview(url:String){
         let navigation = UINavigationController()

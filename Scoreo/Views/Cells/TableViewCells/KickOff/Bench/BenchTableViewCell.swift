@@ -46,6 +46,7 @@ class BenchTableViewCell: UITableViewCell {
             lblPlayerName.text = obj?.nameEn
         }
         imgPlayer.image = UIImage(named: "Player")
+        imgPlayer.contentMode = .scaleAspectFit
         rightView.isHidden = true
         
     }

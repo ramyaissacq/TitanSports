@@ -61,6 +61,20 @@ extension LiveMatchesTableViewCell:UICollectionViewDelegate,UICollectionViewData
         else{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LiveMatchCollectionViewCell", for: indexPath) as! LiveMatchCollectionViewCell
         cell.configureCell(obj: matches?[indexPath.row])
+            cell.callForword = {
+                if indexPath.row + 1 == (self.matches?.count ?? 0){
+                    return
+                }
+                collectionView.scrollToItem(at: IndexPath(row: indexPath.row+1, section: 0), at: .right, animated: true)
+            }
+            
+            cell.callBackword = {
+                if indexPath.row == 0{
+                    return
+                }
+                collectionView.scrollToItem(at: IndexPath(row: indexPath.row-1, section: 0), at: .right, animated: true)
+                
+            }
         return cell
         }
     }

@@ -27,9 +27,10 @@ extension UIImageView{
         {
             self.kf.indicatorType = .activity
             self.kf.setImage(with: url, placeholder: placeholder, options:nil)
+            self.contentMode = .scaleAspectFill
         }
         else {
-//            self.contentMode = .scaleAspectFill
+            self.contentMode = .scaleAspectFit
             self.image = placeholder
             return
         }

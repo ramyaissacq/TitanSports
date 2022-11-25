@@ -11,7 +11,7 @@ import WebKit
 class WebViewViewController: BaseViewController {
     @IBOutlet weak var webView:WKWebView!
     
-   // var fromStart = falsezx
+    var fromStart = false
    var urlString = ""
     var specialStart = false
     
@@ -28,7 +28,10 @@ class WebViewViewController: BaseViewController {
             self.navigationController?.navigationBar.isHidden = true
         }
         else{
+            
             setupSpecialButtons()
+            
+            
         }
         loadUrl()
     }
@@ -42,8 +45,13 @@ class WebViewViewController: BaseViewController {
     
     @objc func backAction(){
         AppPreferences.setIsSearched(value: false)
+        if fromStart{
         Utility.gotoHome()
         Utility.callURlDetailsAPI()
+        }
+        else{
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
 

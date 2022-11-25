@@ -41,10 +41,10 @@
 "America's Cup" = "美洲杯";
 "Football" = "足球";
 "Basketball" = "篮球";
-"Welcome to Kick-Off Sports" = "欢迎来到启球体育";
+"Welcome to Titan Sports" = "欢迎来到精彩体育APP";
 "Lineups" = "阵容";
 "Player Info" = "球员信息";
-"Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Kick-Off Sports and don’t miss a beat all day every day " = "欢迎来到你将下载的最后一个与体育有关的应用程序！在这里，你可以看到所有与体育有关的内容。用启球体育为你的一天开个好头，每天都不会错过任何一个节奏。";
+"Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Titan Sports and don’t miss a beat all day every day " = "欢迎来到你将下载的最后一个与体育有关的应用程序！在这里，你可以看到所有与体育有关的内容。用精彩体育APP为你的一天开个好头，每天都不会错过任何一个节奏。";
 "Is your favourite team taking to the field today? Check out their lineup and how they stack against the opponents! For every sport, we’ll have the lineups ready for your viewing pleasure the moment they’re announced, all without delay." = "你喜欢的球队今天要上场吗？看看他们的阵容，以及他们如何与对手抗衡! 对于每一项运动，我们都会在宣布阵容的那一刻为你准备好观看的乐趣，一切都不会拖延。";
 "Lineups are nothing but meaningless stats without player info! You’ll get player details on the press of a button, their stats, their best performance, greatest triumphs and lowest points, as well as how they fit into the squad.
 " = "如果没有球员信息，阵容只是毫无意义的统计! 你只需按下一个按钮，就能得到球员的详细资料，他们的统计资料，他们的最佳表现，最大的胜利和最低点，以及他们如何融入球队的情况。";
@@ -222,6 +222,7 @@
 "Height" = "身高";
 "Weight" = "体重";
 "Profile" = "头像";
-"Kick-Off Sports" = "启球体育";
+"Titan Sports" = "精彩体育APP";
 "Bench" = "队员们";
 "Formation" = "组建";
+"LEAGUES" = "联赛";

@@ -17,7 +17,7 @@ class EmptyLiveCollectionViewCell: UICollectionViewCell {
     }
     
     override func layoutSubviews() {
-        backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
+      //  backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
     }
 
 }

@@ -16,8 +16,8 @@ class SideMenuTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imgArrow.tintColor = Colors.accentColor()
-        imgIcon.tintColor = Colors.accentColor()
+        imgArrow.setImageColor(color: Colors.accentColor())
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

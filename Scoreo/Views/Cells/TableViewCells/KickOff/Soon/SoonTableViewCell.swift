@@ -38,7 +38,13 @@ class SoonTableViewCell: UITableViewCell {
     
     func configureCell(obj:MatchList?){
         
+        if KickOffViewController.urlDetails?.mapping?.count ?? 0 == 0{
+            lblName.text = ""
+        }
+        else{
         lblName.text = obj?.leagueNameShort
+        }
+        
         lblHomeName.text = obj?.homeName
         lblAwayName.text = obj?.awayName
         imgAwayLogo.setImage(with: obj?.awayLogo, placeholder: Utility.getPlaceHolder())

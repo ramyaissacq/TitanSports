@@ -40,10 +40,10 @@
 "America's Cup" = "Cup của Mỹ";
 "Football" = "Bóng đá";
 "Basketball" = "Bóng rổ";
-"Welcome to Kick-Off Sports" = "Welcome to Kick-Off Sports";
+"Welcome to Titan Sports" = "Welcome to Titan Sports";
 "Lineups" = "Lineups";
 "Player Info" = "Player Info";
-"Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Kick-Off Sports and don’t miss a beat all day every day " = "Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Kick-Off Sports and don’t miss a beat all day every day";
+"Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Titan Sports and don’t miss a beat all day every day " = "Welcome to the last app you’ll download for all your sports related content! Kick-off your day with a bang with Titan Sports and don’t miss a beat all day every day";
 "Is your favourite team taking to the field today? Check out their lineup and how they stack against the opponents! For every sport, we’ll have the lineups ready for your viewing pleasure the moment they’re announced, all without delay." = "Is your favourite team taking to the field today? Check out their lineup and how they stack against the opponents! For every sport, we’ll have the lineups ready for your viewing pleasure the moment they’re announced, all without delay.";
 "Lineups are nothing but meaningless stats without player info! You’ll get player details on the press of a button, their stats, their best performance, greatest triumphs and lowest points, as well as how they fit into the squad.
 " = "Lineups are nothing but meaningless stats without player info! You’ll get player details on the press of a button, their stats, their best performance, greatest triumphs and lowest points, as well as how they fit into the squad.
@@ -218,6 +218,7 @@
 "Height" = "Chiều cao";
 "Weight" = "Trọng lượng";
 "Profile" = "Hồ sơ";
-"Kick-Off Sports" = "Kick-Off Sports";
-"Bench" = "Bench";
-"Formation" = "Formation";
+"Titan Sports" = "Titan Sports";
+"Bench" = "Băng ghế";
+"Formation" = "Sự hình thành";
+"LEAGUES" = "GIẢI ĐẤU";

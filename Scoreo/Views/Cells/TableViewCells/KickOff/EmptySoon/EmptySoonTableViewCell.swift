@@ -17,7 +17,7 @@ class EmptySoonTableViewCell: UITableViewCell {
     }
     
     override func layoutSubviews() {
-        backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
+       // backView.roundCorners(corners: [.topLeft,.bottomRight], radius: 20)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
